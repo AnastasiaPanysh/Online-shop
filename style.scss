@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+%flex-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+}
+$color-font: #b69078;
+
+body {
+    background-color: #fff;
+    margin: auto;
+    max-width: 1120px;
+}
+
+header {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
+
+    .img-logo {
+        background-image: url(./assets/tild6366-3462-4534-a566-373335373461____-4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 70px;
+    }
+}
+
+main {
+    display: flex;
+    margin-top: 100px;
+
+    .products {
+        width: 70%;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            color: #b69078;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 30px;
+
+            .pic1 {
+                background-image: url(./assets/pic1.jpg);
+                @extend %flex-item;
+            }
+
+            .pic2 {
+                background-image: url(./assets/pic2.jpg);
+                @extend %flex-item;
+            }
+
+            .pic3 {
+                background-image: url(./assets/pic3.jpg);
+                @extend %flex-item;
+            }
+        
+            .pic4 {
+                background-image: url(./assets/pic4.jpg);
+                @extend %flex-item;
+            }
+
+            .pic5 {
+                background-image: url(./assets/pic5.jpg);
+                @extend %flex-item;
+            }
+
+            .pic6 {
+                background-image: url(./assets/pic6.png);
+                @extend %flex-item;
+            }
+        
+            .pic7 {
+                background-image: url(./assets/pic7.jpg);
+                @extend %flex-item;
+            }
+
+            .pic8 {
+                background-image: url(./assets/pic8.png);
+                @extend %flex-item;
+            }
+
+            .pic9 {
+                background-image: url(./assets/pic9.png);
+                @extend %flex-item;
+            }
+            .add-to-cart{
+                display: flex;
+                justify-content: space-between;
+                .buy{
+                    background-image: url(./assets/79617.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+
+    }
+}

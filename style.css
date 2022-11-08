@@ -20,14 +20,22 @@ body {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
   top: 0;
   z-index: 2;
-  width: 100%;
   background-color: #fff;
+  padding: 15px 0;
+  width: 1120px;
+  cursor: pointer;
 }
 header .img-logo {
   background-image: url(./assets/tild6366-3462-4534-a566-373335373461____-4.png);
@@ -35,6 +43,25 @@ header .img-logo {
   background-size: cover;
   width: 300px;
   height: 70px;
+}
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav ul li {
+  color: black;
+  font: 700 18px "Montserrat";
+}
+header nav ul li:hover {
+  color: #b69078;
+}
+header nav ul li:not(:last-child) {
+  margin-right: 37px;
 }
 
 main {
@@ -100,4 +127,34 @@ main .products .row .add-to-cart .buy {
   background-size: cover;
   width: 20px;
   height: 20px;
+}
+main .cart {
+  right: 5%;
+  height: 70px;
+  position: fixed;
+  border: 2px solid #b69078;
+  padding: 1% 5% 30% 5%;
+}
+main .cart h1 {
+  color: #b69078;
+  font-size: 35px;
+  font-weight: 750;
+  text-align: center;
+}
+main .cart .result {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 200%;
+}
+main .cart button {
+  color: #ffffff;
+  background-color: #d8664d;
+  text-align: center;
+  height: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 0 none;
+  font-size: 16px;
+  font-weight: 700;
 }

@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +12,7 @@
     width: 200px;
     height: 300px;
 }
+
 $color-font: #b69078;
 
 body {
@@ -22,12 +22,16 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 2;
-    width: 100%;
     background-color: #fff;
+    padding: 15px 0;
+    width: 1120px;
+    cursor: pointer;
 
     .img-logo {
         background-image: url(./assets/tild6366-3462-4534-a566-373335373461____-4.png);
@@ -35,6 +39,26 @@ header {
         background-size: cover;
         width: 300px;
         height: 70px;
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                color: black;
+                font: 700 18px 'Montserrat';
+            }
+            li:hover{
+                color: #b69078;
+            }
+
+            li:not(:last-child) {
+                margin-right: 37px;
+            }
+        }
     }
 }
 
@@ -67,7 +91,7 @@ main {
                 background-image: url(./assets/pic3.jpg);
                 @extend %flex-item;
             }
-        
+
             .pic4 {
                 background-image: url(./assets/pic4.jpg);
                 @extend %flex-item;
@@ -82,7 +106,7 @@ main {
                 background-image: url(./assets/pic6.png);
                 @extend %flex-item;
             }
-        
+
             .pic7 {
                 background-image: url(./assets/pic7.jpg);
                 @extend %flex-item;
@@ -97,10 +121,12 @@ main {
                 background-image: url(./assets/pic9.png);
                 @extend %flex-item;
             }
-            .add-to-cart{
+
+            .add-to-cart {
                 display: flex;
                 justify-content: space-between;
-                .buy{
+
+                .buy {
                     background-image: url(./assets/79617.png);
                     background-position: center;
                     background-repeat: no-repeat;
@@ -110,7 +136,39 @@ main {
                 }
             }
         }
+    }
 
+    .cart {
+        right: 5%;
+        height: 70px;
+        position: fixed;
+        border: 2px solid #b69078;
+        padding: 1% 5% 30% 5%;
 
+        h1 {
+            color: #b69078;
+            font-size: 35px;
+            font-weight: 750;
+            text-align: center;
+        }
+
+        .result {
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 200%;
+        }
+
+        button {
+            color: #ffffff;
+            background-color: #d8664d;
+            text-align: center;
+            height: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: 0 none;
+            font-size: 16px;
+            font-weight: 700;
+        }
     }
 }

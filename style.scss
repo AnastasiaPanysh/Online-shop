@@ -51,7 +51,8 @@ header {
                 color: black;
                 font: 700 18px 'Montserrat';
             }
-            li:hover{
+
+            li:hover {
                 color: #b69078;
             }
 
@@ -144,12 +145,19 @@ main {
         position: fixed;
         border: 2px solid #b69078;
         padding: 1% 5% 30% 5%;
+        width: 150px;
 
         h1 {
             color: #b69078;
             font-size: 35px;
             font-weight: 750;
             text-align: center;
+        }
+
+        .cart-div {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
         }
 
         .result {

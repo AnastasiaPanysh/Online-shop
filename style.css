@@ -134,12 +134,22 @@ main .cart {
   position: fixed;
   border: 2px solid #b69078;
   padding: 1% 5% 30% 5%;
+  width: 150px;
 }
 main .cart h1 {
   color: #b69078;
   font-size: 35px;
   font-weight: 750;
   text-align: center;
+}
+main .cart .cart-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
 }
 main .cart .result {
   color: black;
